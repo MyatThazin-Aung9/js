@@ -1,0 +1,41 @@
+.l{
+    background: cadetblue;
+    padding: 70px;    
+    &-calculator{
+        background: #fff;
+        width: 30%;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        &-inn{
+            .ttl{
+                padding: 30px 30px 10px;
+                text-align: center;
+                h3{
+                    font-size: 24px;
+                    font-family: Roboto, sans-serif;
+                }
+            }
+            .input-group{
+                padding: 30px 30px 10px;
+                label{
+                    
+                }
+                .user-input{
+                    padding: 10px;
+                    display: block;
+                }
+            }
+            .button-group{
+                .calculate-btn{
+                    width: 85%;
+                    margin: 30px;
+                    border: none;
+                    background: cadetblue;
+                    padding: 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
