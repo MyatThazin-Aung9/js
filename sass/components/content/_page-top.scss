@@ -8,6 +8,15 @@
         border: none;
         border-radius: 10px;
         &-inn{
+            .result{
+                margin-top: 20px;
+                padding: 20px 10px;
+                text-align: end;
+                background: #ada3a3;
+                color: #fff;
+                font-size: 20px;
+                font-family: Roboto, sans-serif;
+            }
             .ttl{
                 padding: 30px 30px 10px;
                 text-align: center;
@@ -34,15 +43,17 @@
                 }
             }
             .button-group{
+                text-align: center;
                 .calculate-btn{
                     font-size: 18px;
                     font-family: Roboto, sans-serif;
-                    width: 85%;
+                    width: 35%;
                     margin: 30px;
                     border: none;
                     background: cadetblue;
                     padding: 15px;
                     border-radius: 5px;
+                    text-align: center;
                 }
             }
         }

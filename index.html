@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>title</title>
+  <title>JS</title>
   <meta name="description" content="description">
   <meta name="keywords" content="keywords">
   <meta name="robots" content="noindex, nofollow">
@@ -24,24 +24,31 @@
           <div id="calculator" class="l-calculator">
             <div class="l-calculator-inn">
               <div class="ttl">
-               <h3>Calcautor Project</h3>
+               <h3>Calcautor</h3>
+              </div>
+              <div id="result" class="result">
+                0
               </div>
               <div class="input-group">
                 <label for="">Number One :</label>
-                <input type="text" class="user-input" placeholder="Enter First Number">
+                <input type="number" id="firstNum" class="user-input" placeholder="Enter First Number">
               </div>
               <div class="input-group">
                 <label for="">Number Two :</label>
-                <input type="text" class="user-input" placeholder="Enter Second Number">
+                <input type="number" id="secNum" class="user-input" placeholder="Enter Second Number">
               </div>
               <div class="input-group">
                 <label for="">Opetators :</label>
-                <select class="user-input">
-                  <option value="">Choose Options ...</option>
+                <select id="operation" class="user-input">
+                  <option value="empty">Choose Options ...</option>
+                  <option value="add">+</option>
+                  <option value="minus">-</option>
+                  <option value="multiply">*</option>
+                  <option value="division">/</option>
                 </select>
               </div>
               <div class="button-group">
-                <button class="calculate-btn">Calculate</button>
+                <button id="btncalculate" type="button" class="calculate-btn">Calculate</button>
               </div>
             </div>
           </div>
@@ -54,6 +61,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/src/common.js"></script>
+  <script src="js/src/cal.js"></script>
 
 </body>
 
