@@ -1,15 +1,16 @@
-let num1 = document.getElementById("firstNum");
-let num2 = document.getElementById("secNum");
-let operator = document.getElementById("operation");
 let btn = document.getElementById("btncalculate");
-let result = document.getElementById("result");
+let ansresult = document.getElementById("result");
 let finalResult;
 
 btn.addEventListener("click",function(){
+    let num1 = document.getElementById("firstNum");
+    let num2 = document.getElementById("secNum");
+    let operator = document.getElementById("operation");
     num1 = parseInt(num1.value);
     num2 = parseInt(num2.value);
 
     console.log(typeof num1);
+    console.log(typeof num2);
     switch(operator.value){
         case "add":
             finalResult = num1 + num2;
@@ -27,5 +28,6 @@ btn.addEventListener("click",function(){
             console.log("Operation error");
             break;
     }
-    result.innerHTML = finalResult;
+    console.log(finalResult);
+    ansresult.innerHTML = finalResult;
 });
