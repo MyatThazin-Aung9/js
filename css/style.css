@@ -414,9 +414,25 @@ a[href^=tel] {
   color: inherit; }
 
 .l {
-  background: cadetblue; }
+  background: cadetblue;
+  padding: 70px; }
   .l-calculator {
-    background: #fff; }
+    background: #fff;
+    width: 30%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px; }
+    .l-calculator-inn .ttl {
+      padding: 30px 30px 10px;
+      text-align: center; }
+      .l-calculator-inn .ttl h3 {
+        font-size: 24px;
+        font-family: Roboto, sans-serif; }
+    .l-calculator-inn .input-group {
+      padding: 30px 30px 10px; }
+      .l-calculator-inn .input-group .user-input {
+        padding: 10px;
+        display: block; }
     .l-calculator-inn .button-group .calculate-btn {
       width: 85%;
       margin: 30px;
