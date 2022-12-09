@@ -32,12 +32,12 @@
               <div class="input-group">
                 <label for="">Number One :</label>
                 <input type="number" id="firstNum" class="user-input" placeholder="Enter First Number">
-                <small class="error">Number one is required!</small>
+                <small id="numOneError" class="error">Number one is required!</small>
               </div>
               <div class="input-group">
                 <label for="">Number Two :</label>
                 <input type="number" id="secNum" class="user-input" placeholder="Enter Second Number">
-                <small class="error">Number two is required!</small>
+                <small id="numTwoError" class="error">Number two is required!</small>
               </div>
               <div class="input-group">
                 <label for="">Opetators :</label>
@@ -48,6 +48,7 @@
                   <option value="multiply">*</option>
                   <option value="division">/</option>
                 </select>
+                <small id="opeartorError" class="error">Operator is required!</small>
               </div>
               <div class="button-group">
                 <button id="btncalculate" type="button" class="calculate-btn">Calculate</button>
