@@ -422,6 +422,14 @@ a[href^=tel] {
     margin: 0 auto;
     border: none;
     border-radius: 10px; }
+    .l-calculator-inn .result {
+      margin: 20px 20px 0px;
+      padding: 20px 10px;
+      text-align: end;
+      background: cadetblue;
+      color: #fff;
+      font-size: 20px;
+      font-family: Roboto, sans-serif; }
     .l-calculator-inn .ttl {
       padding: 30px 30px 10px;
       text-align: center; }
@@ -430,15 +438,29 @@ a[href^=tel] {
         font-family: Roboto, sans-serif; }
     .l-calculator-inn .input-group {
       padding: 30px 30px 10px; }
+      .l-calculator-inn .input-group label {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: Roboto, sans-serif; }
       .l-calculator-inn .input-group .user-input {
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
         padding: 10px;
-        display: block; }
-    .l-calculator-inn .button-group .calculate-btn {
-      width: 85%;
-      margin: 30px;
-      border: none;
-      background: cadetblue;
-      padding: 15px;
-      border-radius: 5px; }
+        display: block;
+        width: 100%;
+        border: 1px solid #000;
+        margin-top: 10px; }
+    .l-calculator-inn .button-group {
+      text-align: center; }
+      .l-calculator-inn .button-group .calculate-btn {
+        font-size: 18px;
+        font-family: Roboto, sans-serif;
+        width: 35%;
+        margin: 30px;
+        border: none;
+        background: cadetblue;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
