@@ -19,7 +19,7 @@ btn.addEventListener("click",function(){
 
     checkValidation(num1, num2, operator);
 
-    if (numOneStatus == false && numTwoStatus == false && operatorStatus == false) {
+    if (!numOneStatus && !numTwoStatus && !operatorStatus) {
         num1 = parseInt(num1.value);
         num2 = parseInt(num2.value);
 
