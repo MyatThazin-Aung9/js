@@ -4,3 +4,9 @@
 
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript
   - https://www.javascripttutorial.net/es6/
+
+## reference
+
+  - https://fakestoreapi.com/
+
+  
