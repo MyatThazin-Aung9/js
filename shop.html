@@ -48,14 +48,18 @@
 
     // async await
 
-    let data = async () => {
-      await fetch("https://fakestoreapi.com/products",{
+    let callData = async () => {
+      let response = await fetch("https://fakestoreapi.com/products" , {
         method : "GET",
         headers : {
           "Content-Type" : "application/json",
         },
-      })
-    }
+      });
+
+      let jsonResponse = await response.json();
+      console.log(jsonResponse);
+    };
+    callData();
   </script>
 
 </body>
