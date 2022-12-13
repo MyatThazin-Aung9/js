@@ -38,28 +38,28 @@
   <script>
     //fetch
 
-    // fetch('https://fakestoreapi.com/products')
-    // .then((response) => response.json())
-    // .then((result) => {
-    //   let data;
-    //   data = result
-    //   console.log(data);
-    // });
+    fetch('https://fakestoreapi.com/products')
+    .then((response) => response.json())
+    .then((result) => {
+      let data;
+      data = result
+      console.log(data);
+    });
 
     // async await
 
-    let callData = async () => {
-      let response = await fetch("https://fakestoreapi.com/products" , {
-        method : "GET",
-        headers : {
-          "Content-Type" : "application/json",
-        },
-      });
+    // let callData = async () => {
+    //   let response = await fetch("https://fakestoreapi.com/products" , {
+    //     method : "GET",
+    //     headers : {
+    //       "Content-Type" : "application/json",
+    //     },
+    //   });
 
-      let jsonResponse = await response.json();
-      console.log(jsonResponse);
-    };
-    callData();
+    //   let jsonResponse = await response.json();
+    //   console.log(jsonResponse);
+    // };
+    // callData();
   </script>
 
 </body>
