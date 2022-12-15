@@ -6,7 +6,14 @@
             text-align: center;
         }
         &-content{
-
+            margin-top: 30px;
+            text-align: center;
+            columns: 450px 3;
+            img{
+                width: 100%;
+                max-width: 450px;
+                padding: 10px 0;
+            }
         }
     }
 }

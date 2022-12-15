@@ -25,20 +25,7 @@
             <div class="l-shop-ttl">
                 <h2>My Shopping</h2>
             </div>
-            <div class="l-shop-content">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
-            </div>
+            <div id="shopim" class="l-shop-content"></div>
           </div>
         </main><!-- #main -->
       </div><!-- #primary -->
@@ -50,6 +37,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/src/common.js"></script>
   <script>
+    let shop = document.getElementById("shopim");
     //fetch
 
     fetch('https://fakestoreapi.com/products')
@@ -58,6 +46,7 @@
       let data;
       data = result
       console.log(data);
+      shop.innerHTML = `<img src="${data[0].image}" />`;
     });
 
     // async await
