@@ -38,6 +38,7 @@
   <script src="js/src/common.js"></script>
   <script>
     let shop = document.getElementById("shopim");
+    let list;
     //fetch
 
     fetch('https://fakestoreapi.com/products')
@@ -46,7 +47,12 @@
       let data;
       data = result
       console.log(data);
-      shop.innerHTML = `<img src="${data[0].image}" />`;
+      
+      for(let i = 0; i < data.length; i++) {
+        list += `<img src="${data[i].image}" />`;
+      }
+      shop.innerHTML = list;
+      // shop.innerHTML = `<img src="${data[0].image}" />`;
     });
 
     // async await
