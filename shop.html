@@ -25,24 +25,24 @@
             <div class="l-shop-ttl">
                 <h2>My Shopping</h2>
             </div>
-            <div class="l-shop-content">
+            <div class="l-shop-content d-fl">
               <table class="table">
                 <thead>
                   <tr>
                     <th>ID</th>
                     <th>Category</th>
-                    <th>Image</th>
                     <th>Title</th>
                     <th>Rating</th>
+                    <th>Image</th>
                   </tr>
                 </thead>
                 <tbody id="shopim">
                   <tr>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
                     <img src="" />
-                    <td></td>
-                    <td></td>
                   </tr>
                 </tbody>
               </table>
@@ -73,9 +73,9 @@
         list += `<tr>
           <td>${data[i].id}</td>
           <td>${data[i].category}</td>
-          <img src="${data[i].image}" />
           <td>${data[i].title}</td>
           <td>${data[i].rating.rate}</td>
+          <img src="${data[i].image}" />
         </tr>`;
       }
       shop.innerHTML = list;
