@@ -1,6 +1,4 @@
 .l{
-    background: cadetblue;
-    padding: 70px;
     &-shop{
         &-ttl{
             text-align: center;
@@ -8,11 +6,31 @@
         &-content{
             margin-top: 30px;
             text-align: center;
-            columns: 450px 3;
-            img{
-                width: 100%;
-                max-width: 450px;
-                padding: 10px 0;
+            justify-content: center;
+            height: 100vh;
+            .table{
+                width: 80%;
+                text-align: left;
+                border-collapse: collapse;
+                border: 1px solid #04aa6d30;
+                thead{
+                    background-color: #04aa6d;
+                    color: #ffffff;
+                }
+                tr, th, td{
+                    padding: 10px 15px;
+                }
+                tr{
+                    &:nth-child(odd){
+                        background-color: #eeeeee40;
+                    }
+                    &:hover{
+                        background-color: #eeeeee99;
+                    }
+                }
+                img{
+                    max-width: 50px;
+                }
             }
         }
     }
