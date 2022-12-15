@@ -32,18 +32,12 @@
                     <th>ID</th>
                     <th>Category</th>
                     <th>Title</th>
+                    <th>Price</th>
                     <th>Rating</th>
                     <th>Image</th>
                   </tr>
                 </thead>
                 <tbody id="shopim">
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <img src="">
-                  </tr>
                 </tbody>
               </table>
             </div>
@@ -74,6 +68,7 @@
           <td>${data[i].id}</td>
           <td>${data[i].category}</td>
           <td>${data[i].title}</td>
+          <td>${data[i].price} $</td>
           <td>${data[i].rating.rate}</td>
           <td><img src="${data[i].image}"></td>
         </tr>`;

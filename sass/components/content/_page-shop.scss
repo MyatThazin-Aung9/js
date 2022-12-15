@@ -7,7 +7,7 @@
             margin-top: 30px;
             text-align: center;
             justify-content: center;
-            height: 100vh;
+            // height: 100vh;
             .table{
                 width: 80%;
                 text-align: left;
@@ -34,10 +34,11 @@
                     td{
                         font-size: 14px;
                         font-family: Roboto, sans-serif;
+                        vertical-align: middle;
                     }
                 }
                 img{
-                    max-width: 50px;
+                    max-width: 70px;
                 }
             }
         }
