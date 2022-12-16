@@ -70,7 +70,7 @@
           <td>${data[i].title}</td>
           <td>${data[i].price} $</td>
           <td>${data[i].rating.rate}</td>
-          <td><img src="${data[i].image}"></td>
+          <td><a href="${data[i].image}" target="_blank"><img src="${data[i].image}"></a></td>
         </tr>`;
       }
       shop.innerHTML = list;
