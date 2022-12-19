@@ -22,14 +22,17 @@
       <div id="primary" class="content-area">
         <main id="main" class="site-main">
           <div class="l-shop">
+            <div class="l-shop-card">
+              
+            </div>
             <div class="l-shop-ttl">
                 <h2>My Shopping</h2>
             </div>
             <div class="l-shop-content d-fl">
               <table class="table">
                 <thead>
-                  <tr>
-                    <th onclick="alertMessage()">ID</th>
+                  <tr onclick="detail()">
+                    <th>ID</th>
                     <th>Category</th>
                     <th>Title</th>
                     <th>Price</th>
@@ -64,7 +67,7 @@
       console.log(data);
       
       for(let i = 0; i < data.length; i++) {
-        list += `<tr>
+        list += `<tr onclick="detail(${data[i].id})">
           <td>${data[i].id}</td>
           <td>${data[i].category}</td>
           <td>${data[i].title}</td>
@@ -92,8 +95,8 @@
     // };
     // callData();
 
-    function alertMessage(){
-      console.log("hi there!");
+    function detail(id){
+      console.log(id);
     }
   </script>
 
