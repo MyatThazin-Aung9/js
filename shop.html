@@ -29,7 +29,7 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th>ID</th>
+                    <th onclick="alertMessage()">ID</th>
                     <th>Category</th>
                     <th>Title</th>
                     <th>Price</th>
@@ -53,7 +53,7 @@
   <script src="js/src/common.js"></script>
   <script>
     let shop = document.getElementById("shopim");
-    let list;
+    let list = "";
     //fetch
 
     fetch('https://fakestoreapi.com/products')
@@ -91,6 +91,10 @@
     //   console.log(jsonResponse);
     // };
     // callData();
+
+    function alertMessage(){
+      console.log("hi there!");
+    }
   </script>
 
 </body>
