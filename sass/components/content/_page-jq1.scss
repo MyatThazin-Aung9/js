@@ -28,13 +28,21 @@
             }
         }
         .animation{
-            text-align: center;
             margin-top: 30px;
+            text-align: center;
             &-btn{
                 font-size: 16px;
                 font-family: Roboto, sans-serif;
                 padding: 5px 10px;
                 border: 1px solid cadetblue;
+            }
+            .box{
+                background-color: rgb(8, 8, 57);
+                width: 200px;
+                height: 200px;
+                border: 10px solid rgb(245, 144, 161);
+                border-radius: 50%;
+                position: relative;
             }
         }
     }

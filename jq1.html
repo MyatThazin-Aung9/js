@@ -34,6 +34,7 @@
 
             <div class="animation">
               <button class="animation-btn">Animation</button>
+              <div class="box"></div>
             </div>
           </div>
         </main><!-- #main -->
@@ -75,6 +76,12 @@
 
       $("#toggleBtn").click(function() {
         $("#myImg").fadeToggle(1000);
+      });
+
+      $(".animation-btn").click(function(){
+        $(".box").animate({
+          left: "900px",
+        });
       });
     });
   </script>
