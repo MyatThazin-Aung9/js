@@ -24,12 +24,12 @@
           <div id="jqtest" class="l-jqtest">
             <!-- <h2 id="jqttl">JQ Testing</h2> -->
             <div class="btn-gp">
-              <button>Show</button>
-              <button>Hide</button>
-              <button>Toggle</button>
+              <button id="showBtn">Show</button>
+              <button id="hideBtn">Hide</button>
+              <button id="toggleBtn">Toggle</button>
             </div>
             <figure>
-              <img src="./assets/img/Kung-Fu-Panda-4.jpg" alt="KUFUPANDA">
+              <img id="myImg" src="./assets/img/Kung-Fu-Panda-4.jpg" alt="KUFUPANDA">
             </figure>
           </div>
         </main><!-- #main -->
@@ -60,7 +60,13 @@
     //   });
     // });
     $(document).ready(() => {
+      $("#showBtn").click(function() {
+        $("#myImg").show();
+      });
 
+      $("hideBtn").click(function() {
+        $("#myImg").hide();
+      });
     });
   </script>
 </body>
