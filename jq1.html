@@ -36,13 +36,20 @@
   <script>
     // document.getElementById("jqttl").innerHTML = "Welcome From JS";
     // $("#jqttl") = document.querySelector("#jqttl")
-    $("#jqttl").html("Welcome From JS");
+    // $("#jqttl").html("Welcome From JS");
 
     // document.querySelector("#jqttl").addEventListener("click", function() {
     //   this.style.display = "none";
     // });
-    $("#jqttl").click(function(){
-      $(this).hide(1000);
+    // $("#jqttl").click(function(){
+    //   $(this).hide(1000, function(){
+    //     console.log("Hello, welcome from JS!");
+    //   });
+    // });
+    $(document).ready(() => {
+      $("#jqttl").click(function(){
+        $(this).hide();
+      });
     });
   </script>
 </body>
