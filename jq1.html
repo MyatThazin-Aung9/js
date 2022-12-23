@@ -61,16 +61,16 @@
     // });
     $(document).ready(() => {
       $("#showBtn").click(function() {
-        // $("#myImg").show();
-        $("#myImg").css("display","inline-block");
+        $("#myImg").show(1000);
+        // $("#myImg").css("display","inline-block");
       });
 
       $("#hideBtn").click(function() {
-        $("#myImg").hide();
+        $("#myImg").hide(1000);
       });
 
       $("#toggleBtn").click(function() {
-        $("#myImg").toggle();
+        $("#myImg").fadeToggle(1000);
       });
     });
   </script>
