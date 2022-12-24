@@ -34,6 +34,7 @@
 
             <div class="animation">
               <button class="animation-btn">Animation</button>
+              <button class="stop">Stop</button>
               <div class="box"></div>
             </div>
           </div>
@@ -81,7 +82,12 @@
       $(".animation-btn").click(function(){
         $(".box").animate({
           left: "900px",
-        });
+        },
+        5000,
+        function(){
+          $("#myImg").show(1000);
+        }
+        );
       });
     });
   </script>
