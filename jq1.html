@@ -35,8 +35,10 @@
             <div class="animation">
               <button class="animation-btn">Animation</button>
               <button class="stop">Stop</button>
+              <button class="chaining">Chaining</button>
               <div class="box"></div>
             </div>
+            <h2 id="chain">Hi there!</h2>
           </div>
         </main><!-- #main -->
       </div><!-- #primary -->
@@ -92,6 +94,10 @@
 
       $(".stop").click(function(){
         $(".box").stop();
+      });
+
+      $(".chaining").click(function(){
+        $("#chain").css("color","blue").hide(2000).show(2000);
       });
     });
   </script>
